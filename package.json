@@ -1,11 +1,12 @@
 {
   "name": "comitizen",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "main": "index.js",
   "scripts": {
     "commit": "cz",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "release": "standard-version"
   },
   "keywords": [],
   "author": "",
@@ -14,7 +15,8 @@
     "@commitlint/cli": "^12.1.4",
     "@commitlint/config-conventional": "^12.1.4",
     "commitizen": "^4.2.4",
-    "husky": "^6.0.0"
+    "husky": "^6.0.0",
+    "standard-version": "^9.3.0"
   },
   "husky": {
     "pre-commit": "npm run lint",
