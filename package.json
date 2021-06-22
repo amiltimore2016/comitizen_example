@@ -19,7 +19,9 @@
     "commitlint-plugin-jira-rules": "^1.5.1",
     "cz-conventional-changelog-custom-format": "^1.0.2",
     "husky": "^6.0.0",
-    "standard-version": "^9.3.0"
+    "meow": "^10.0.1",
+    "standard-version": "^9.3.0",
+    "trim-newlines": "^4.0.2"
   },
   "husky": {
     "pre-commit": "npm run lint",
