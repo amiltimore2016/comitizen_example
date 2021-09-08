@@ -3,33 +3,15 @@
   "version": "2.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"cool tests passed\"",
-    "release": "standard-version",
-    "prepare": "husky install"
-  },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@commitlint/cli": "^12.1.4",
-    "@commitlint/config-conventional": "^12.1.4",
-    "commitizen": "^4.2.4",
-    "commitlint-config-jira": "^1.5.1",
-    "commitlint-plugin-jira-rules": "^1.5.1",
+    "@commitlint/cli": "^13.1.0",
+    "@commitlint/config-conventional": "^13.1.0",
     "cz-conventional-changelog-custom-format": "^1.0.2",
-    "git-cz": "^4.7.6",
-    "husky": "^7.0.0",
     "lint-staged": "^11.1.2",
-    "meow": "^10.0.1",
-    "standard-version": "^9.3.0",
-    "trim-newlines": "^4.0.2"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "npm run test",
-      "prepare-commit-msg": "exec < /dev/tty && git cz --hook || true"
-    }
+    "prettier": "^2.3.2"
   },
   "config": {
     "commitizen": {
