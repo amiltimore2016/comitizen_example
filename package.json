@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "commit": "git cz --allow-empty",
+    "commit": "npx git-cz",
     "test": "echo \"cool tests passed\"",
     "release": "standard-version",
     "prepare": "husky install"
@@ -15,10 +15,10 @@
   "devDependencies": {
     "@commitlint/cli": "^12.1.4",
     "@commitlint/config-conventional": "^12.1.4",
-    "commitizen": "^4.2.4",
     "commitlint-config-jira": "^1.5.1",
     "commitlint-plugin-jira-rules": "^1.5.1",
     "cz-conventional-changelog-custom-format": "^1.0.2",
+    "git-cz": "^4.7.6",
     "husky": "7.0.2",
     "lint-staged": "^11.1.2",
     "meow": "^10.0.1",
@@ -27,8 +27,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "npm run test",
-      "prepare-commit-msg": "npm run commit"
+      "pre-commit": "npm run test"
     }
   },
   "config": {
