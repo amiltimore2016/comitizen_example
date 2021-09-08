@@ -19,13 +19,15 @@
     "commitlint-plugin-jira-rules": "^1.5.1",
     "cz-conventional-changelog-custom-format": "^1.0.2",
     "husky": "^6.0.0",
+    "lint-staged": "^11.1.2",
     "meow": "^10.0.1",
     "standard-version": "^9.3.0",
     "trim-newlines": "^4.0.2"
   },
   "husky": {
     "pre-commit": "npm run lint",
-    "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
+    "prepare-commit-msg": "exec < /dev/tty && git cz --hook || true"
   },
   "config": {
     "commitizen": {
