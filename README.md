@@ -1,6 +1,5 @@
 # Conventional Changelog
 
-
 ## What
 
 In order to enable a Changelog generation during the merge process we need to install conventional changelo and commitizen. The goal
@@ -10,7 +9,7 @@ here is to facilitate users the generation of valid changelog messages during th
 
 This setup was tested with the following setup
 
-* Macbook pro with BiGSur os M1
+* Macbook pro with BiGSur os M1 and Intel x64
 * nvm with nodejs v12 installed
 * npm v6
 
