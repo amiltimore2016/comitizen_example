@@ -1,6 +1,20 @@
 # Conventional Changelog
 
-## Steps
+
+## What
+
+In order to enable a Changelog generation during the merge process we need to install conventional changelo and commitizen. The goal
+here is to facilitate users the generation of valid changelog messages during the git commit stage.
+
+## Environment
+
+This setup was tested with the following setup
+
+* Macbook pro with BiGSur os M1
+* nvm with nodejs v12 installed
+* npm v6
+
+## Setup
 
 Init npm repo
 
