@@ -1,24 +1,35 @@
 {
-  "name": "comitizen",
+  "name": "comitizen-example",
   "version": "2.0.0",
   "description": "",
   "main": "index.js",
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "scripts": {
+    "commit": "npx git-cz",
+    "format": "prettier --write *.js",
+    "semantic-release": "semantic-release"
+  },
   "devDependencies": {
-    "@commitlint/cli": "^13.1.0",
-    "@commitlint/config-conventional": "^13.1.0",
-    "commitlint": "^13.1.0",
-    "cz-conventional-changelog": "^3.3.0",
-    "cz-conventional-changelog-custom-format": "^1.0.2",
-    "husky": "^7.0.2",
-    "lint-staged": "^11.1.2",
-    "prettier": "^2.3.2"
+    "@digitalroute/cz-conventional-changelog-for-jira": "^6.6.0",
+    "@semantic-release/gitlab": "^6.2.2",
+    "commitizen": "^4.2.4",
+    "eslint": "^7.32.0",
+    "prettier": "^2.3.2",
+    "semantic-release": "^17.4.7",
+    "semver": "^7.3.5"
+  },
+  "jira-prepare-commit-msg": {
+    "messagePattern": "[$J]\n$M",
+    "jiraTicketPattern": "([A-Z]+-\\d+)",
+    "commentChar": "#",
+    "isConventionalCommit": false,
+    "allowEmptyCommitMessage": false
   },
   "config": {
     "commitizen": {
-      "path": "./node_modules/cz-conventional-changelog-custom-format"
+      "path": "./node_modules/@digitalroute/cz-conventional-changelog-for-jira"
     }
   }
 }
