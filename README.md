@@ -38,3 +38,14 @@ If using the commitlint js library, the "maxHeaderWidth" configuration property 
 ## Husky Setup
 
 Optionally setup [husky](https://typicode.github.io/husky/#/) so github hook gets triggered when committing, your mileage may vary.
+
+## Usage
+
+npm run commit
+
+---
+**TIP**
+
+You must do a git add . otherwise it will not work
+
+---
