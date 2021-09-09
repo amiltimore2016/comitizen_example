@@ -1,68 +1,36 @@
-# comitizen_example
+# Conventional Changelog
 
-## Setup
+## Steps
 
-* Create a folder calle comitizen_example.
-
-```shell
-mkdir comitizen_example
-```
-
-* Change into folder and initilize npm project.
-  
-```shell
-   cd comitizen_example
-   npm init -y
-```
-
-## Install as Dev dependencies the following
-
-* @commitlint/cli
-* @commitlint/config-conventional
-* commitizen
-* commitlint-config-jira
-* commitlint-plugin-jira-rules
-* cz-conventional-changelog-custom-format
-* husky
-* standard-version
+Init npm repo
 
 ```shell
-  npm i -D commitlint/cl commitlint/config-conventional commitizen commitlint-config-jira commitlint-plugin-jira-rules cz-conventional-changelog-custom-format husky standard-version
-```
+npm init -y
+````
 
-## Create commitlint.config.js
+Install dev dependencies
 
 ```shell
-   echo "module.exports = {extends: ['@commitlint/config-conventional']}" > commitlint.config.js
+npm i -D @digitalroute/cz-conventional-changelog-for-jira @semantic-release/gitlab commitizen eslint prettier semantic-release semver
 ```
 
-## Add scritps to package.json
+add the following to package.json
 
 ```json
 {
   "scripts": {
-    "commit": "cz",
-    "release": "standard-version"
+    "commit": "git-cz"
   },
-...
-```
-
-## Add the husky configuration parameters in your package.json
-
-```json
-   "husky": {
-    "pre-commit": "npm run lint",
-    "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
-   },
-```
-
-## Add your .versionrc.json file so the urls can be updated in CHANGELOG.md
-
-```json
-  {
-    "commitUrlFormat": "https://github.com/amiltimore2016/comitizen_example/commits/",
-    "issueUrlFormat": "https://jira.bookinggo.io/browse/"
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/@digitalroute/cz-conventional-changelog-for-jira"
+    }
   }
+}
 ```
 
-## yadadayada
+For additonal customization head over to [cz-conventional-changelog-jira](https://github.com/digitalroute/cz-conventional-changelog-for-jira)
+
+## Commitlint
+
+If using the commitlint js library, the "maxHeaderWidth" configuration property will default to the configuration of the "header-max-length" rule instead of the hard coded value of 72. This can be ovewritten by setting the 'maxHeaderWidth' configuration in package.json or the CZ_MAX_HEADER_WIDTH environment variable.
