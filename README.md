@@ -49,3 +49,8 @@ npm run commit
 You must do a git add . otherwise it will not work
 
 ---
+
+
+## Additional References
+
+[Setting up semantic release in gitlab ci](https://semantic-release.gitbook.io/semantic-release/recipes/recipes/gitlab-ci)
