@@ -37,4 +37,4 @@ If using the commitlint js library, the "maxHeaderWidth" configuration property 
 
 ## Husky Setup
 
-Optionally setup husky so github hook gets triggered when committing, your mileage may vary.
+Optionally setup [husky](https://typicode.github.io/husky/#/) so github hook gets triggered when committing, your mileage may vary.
