@@ -60,7 +60,7 @@ npm run commit
 ---
 **TIP**
 
-You must do a git add . otherwise it will not work
+You must do a 'git add .' otherwise it will not work
 
 ---
 
