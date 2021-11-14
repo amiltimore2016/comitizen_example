@@ -6,7 +6,7 @@ In order to enable a Changelog generation during the merge process we need to in
 
 ## Environment
 
-This setup was tested with the following setup
+This repo was tested with the following setup
 
 * Macbook pro with BiGSur os M1 and Intel x64
 * nvm with nodejs v14.17.0 installed
