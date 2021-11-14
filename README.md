@@ -62,11 +62,7 @@ If using the commitlint js library, the "maxHeaderWidth" configuration property 
 
 Optionally setup [husky](https://typicode.github.io/husky/#/) so github hook gets triggered when committing, your mileage may vary.
 
-<<<<<<< HEAD
-You may need to add prepare stanza in package.json
-=======
 You might need to add prepare stanza for husky to work.
->>>>>>> e6fc8dd (chore: CET2-1677 fix merge)
 
 ## Usage
 
