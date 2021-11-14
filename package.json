@@ -13,13 +13,15 @@
   "scripts": {
     "commit": "npx git-cz",
     "format": "prettier --write *.js",
-    "semantic-release": "semantic-release"
+    "semantic-release": "semantic-release",
+    "prepare": "husky install"
   },
   "devDependencies": {
     "@digitalroute/cz-conventional-changelog-for-jira": "^6.8.0",
     "@semantic-release/gitlab": "^7.0.4",
     "commitizen": "^4.2.4",
     "eslint": "^8.2.0",
+    "husky": "^7.0.0",
     "prettier": "^2.4.1",
     "semantic-release": "^18.0.0",
     "semver": "^7.3.5"
@@ -30,6 +32,11 @@
     "commentChar": "#",
     "isConventionalCommit": false,
     "allowEmptyCommitMessage": false
+  },
+  "husky": {
+    "hooks": {
+      "prepare-commit-msg": "exec < /dev/tty && git cz --hook || true"
+    }
   },
   "config": {
     "commitizen": {
