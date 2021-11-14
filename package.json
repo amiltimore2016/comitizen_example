@@ -35,7 +35,8 @@
   },
   "husky": {
     "hooks": {
-      "prepare-commit-msg": "exec < /dev/tty && npx git-cz --hook || true"
+      "prepare-commit-msg": "exec < /dev/tty && npx git-cz --hook || true",
+      "pre-commit": "npm test"
     }
   },
   "config": {
