@@ -1,7 +1,7 @@
 console.log("hello")
-console.log("npm sucks")
+console.log("npm can be improved")
 
-console.log("frustration level hig")
+console.log("frustration level high")
 
 
 
