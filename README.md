@@ -52,6 +52,8 @@ If using the commitlint js library, the "maxHeaderWidth" configuration property 
 
 Optionally setup [husky](https://typicode.github.io/husky/#/) so github hook gets triggered when committing, your mileage may vary.
 
+You may need to add prepare stanza in package.json
+
 ## Usage
 
 npm run commit
