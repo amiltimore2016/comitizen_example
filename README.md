@@ -2,8 +2,7 @@
 
 ## What
 
-In order to enable a Changelog generation during the merge process we need to install conventional changelo and commitizen. The goal
-here is to facilitate users the generation of valid changelog messages during the git commit stage.
+In order to enable a Changelog generation during the merge process we need to install conventional changelog and commitizen. The main goal is to facilitate users the generation of valid changelog messages during the git commit stage.
 
 ## Environment
 
