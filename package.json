@@ -6,18 +6,22 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:amiltimore2016/comitizen_example.git"
+  },
   "scripts": {
     "commit": "npx git-cz",
     "format": "prettier --write *.js",
     "semantic-release": "semantic-release"
   },
   "devDependencies": {
-    "@digitalroute/cz-conventional-changelog-for-jira": "^6.6.0",
-    "@semantic-release/gitlab": "^6.2.2",
+    "@digitalroute/cz-conventional-changelog-for-jira": "^6.8.0",
+    "@semantic-release/gitlab": "^7.0.4",
     "commitizen": "^4.2.4",
-    "eslint": "^7.32.0",
-    "prettier": "^2.3.2",
-    "semantic-release": "^17.4.7",
+    "eslint": "^8.2.0",
+    "prettier": "^2.4.1",
+    "semantic-release": "^18.0.0",
     "semver": "^7.3.5"
   },
   "jira-prepare-commit-msg": {
