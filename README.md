@@ -10,8 +10,18 @@ here is to facilitate users the generation of valid changelog messages during th
 This setup was tested with the following setup
 
 * Macbook pro with BiGSur os M1 and Intel x64
-* nvm with nodejs v12 installed
-* npm v6
+* nvm with nodejs v14.17.0 installed
+* npm v6.14.13
+
+If you have nvm installed there is an .nvmrc that will determine the version on node to use
+
+Just type
+
+```bash
+nvm use
+```
+
+And nvm will install the correct node version.
 
 ## Setup
 
