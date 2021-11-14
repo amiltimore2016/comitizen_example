@@ -4,6 +4,7 @@
 
 In order to enable a Changelog generation during the merge process we need to install conventional changelog and commitizen. The main goal is to facilitate users the generation of valid changelog messages during the git commit stage.
 
+![git-cz example](images/commitizen.png)
 ## Environment
 
 This repo was tested with the following setup
