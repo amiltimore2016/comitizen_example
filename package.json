@@ -20,7 +20,7 @@
   "devDependencies": {
     "@digitalroute/cz-conventional-changelog-for-jira": "^6.8.0",
     "@semantic-release/gitlab": "^7.0.4",
-    "commitizen": "^4.2.4",
+    "commitizen": "^4.3.0",
     "eslint": "^8.2.0",
     "husky": "^7.0.0",
     "prettier": "^2.4.1",
